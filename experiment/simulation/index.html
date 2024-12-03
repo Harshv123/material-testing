@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Experiment 1</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <ul id="lists">
+            <h2>Procedure to Perform the wear test.</h2>
+            <li>You can use the "HELP!" button to get the knowledge about the wear and tribology lab experiment.</li>
+            <li>Step 1: Select the combination for the test (Indentation or Scratching).</li>
+            <li>Step 2: Follow the on-screen instructions to input load and speed.</li>
+            <li>Step 3: Start the simulation and analyze the output.</li>
+        </ul>
+        <center><h2>THANK YOU!</h2></center>
+    </div>
+    <button class="openbtn" onclick="openNav()">☰ Open Procedure</button>
+    <center><button class="openbtn" id="playButton">HELP!</button></center>
+
+    <div class="allbox">
+        <section class="main-section3">
+            <center>
+                <strong><h1 style="margin-top:20px; text-decoration: underline;">Micro-scratching of materials and damage assessment</h1></strong>
+            </center>
+            <br>
+            <div class="box-container">
+                <!-- Indentation Box -->
+                <div class="box" id="indentationBox">
+                    <h3>Indentation Test</h3>
+                    <p>Test the resistance of the material under localized pressure.</p>
+					<button class="test-button" onclick="redirectToExperiment()">Click Here</button>
+					
+                </div>
+                
+                <!-- Scratching Box -->
+                <div class="box" id="scratchingBox">
+                    <h3>Scratching Test</h3>
+                    <p>Assess material damage under surface friction.</p>
+                    <button class="test-button" onclick="redirectToExperiment()">Click Here</button>
+                </div>
+            </div>
+        </section>
+    </div>
+	
+
+    <script>
+        function redirectToExperiment() {
+            // Redirect to the experiment page
+            window.location.href = 'experiment page.html'; // Update with the correct file path if needed
+        }
+    </script>
+
+    <script>
+        // Function to handle test selection
+        function selectTest(testType) {
+            alert("You selected the " + testType + " test. Proceed with the input parameters.");
+            // You can add logic here to update the UI based on the selected test
+        }
+    </script>
+	
+
+
+	<script>
+        function redirectToExperiment() {
+            // Redirect to the experiment page
+            window.location.href = 'experiment page scratching.html'; // Update with the correct file path if needed
+        }
+    </script>
+
+    <script>
+        // Function to handle test selection
+        function selectTest(testType) {
+            alert("You selected the " + testType + " test. Proceed with the input parameters.");
+            // You can add logic here to update the UI based on the selected test
+        }
+    </script>
+</body>
+</html>

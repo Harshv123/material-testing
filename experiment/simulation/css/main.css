@@ -1,0 +1,245 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sidepanel {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 250px;
+  top: 25px;
+  right: 0;
+  background-color: #d5a45e;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 35px;
+}
+
+#lists {
+  margin-left: 20px;
+  padding: 8px 8px 8px 32px;
+  color: white;
+}
+
+.sidepanel a {
+  padding: 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff7f7;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #6b6969;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #d21b7a;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+li {
+  margin: 20px;
+}
+
+.m {
+  color: rgb(35, 33, 33);
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.allbox {
+  border: 4px solid rgb(25, 78, 134);
+  border-radius: 25px;
+  margin: 40px;
+  margin-bottom: 20px;
+  padding: 30px;
+  box-shadow: 2px 2px 5px 4px black;
+}
+
+.container {
+  display: flex;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #B3C8CF;
+  height: 1050px;
+  border-radius: 25px;
+  width: 50%;
+  margin: 2px;
+  border: 2px solid black;
+}
+
+.main-section2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #B3C8CF;
+  height: 1050px;
+  border-radius: 25px;
+  width: 150%;
+  margin: 2px;
+  border: 2px solid black;
+}
+
+.main-section3 {
+  display: flex;
+  flex-direction: column;
+  background-color: #B3C8CF;
+  height: 330px;
+  border-radius: 25px;
+  width: 100%;
+  margin: 2px;
+  border: 2px solid black;
+}
+
+.control-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.video-player {
+  display: none;
+  position: relative;
+}
+
+video {
+  width: 800px;
+  height: 800px;
+  align-items: center;
+  margin-left: 300px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+/* Container for the boxes */
+.box-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+/* Style for individual boxes */
+.box {
+  width: 40%;
+  padding: 20px;
+  background-color: #E5E1DA;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.box h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.test-button {
+  padding: 10px 20px;
+  background-color: #5050cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.test-button:hover {
+  background-color: #ffbd39;
+  color: #000;
+}
+/* Main section container for left and right boxes */
+.left-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+    padding: 20px;
+}
+
+/* Common styles for both boxes */
+.left-box, .right-box {
+    width: 45%; /* Adjust width as needed */
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Image styles */
+.img1, .img2 {
+    width: 100%; /* Fit the image to the container */
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .left-right {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-box, .right-box {
+        width: 90%; /* Adjust for smaller screens */
+        margin-bottom: 20px;
+    }
+}
+
